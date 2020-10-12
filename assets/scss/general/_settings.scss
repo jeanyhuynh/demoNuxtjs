@@ -1,0 +1,16 @@
+// BEGIN GRID SYSTEM //
+
+$grid-columns: 12 !default;
+$grid-gutter-xsmall: 8px !default;
+$grid-gutter-small: 16px !default;
+$grid-gutter-normal: 24px !default;
+$grid-gutter-large: 32px !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// END GRID SYSTEM //

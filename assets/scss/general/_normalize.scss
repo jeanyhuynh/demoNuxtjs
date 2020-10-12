@@ -1,0 +1,338 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  font-size: 62.5%;
+  body {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+}
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #242424;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #15113f url(/images/page-bg.png) top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border-top-width: 1px;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  color: inherit;
+  box-shadow: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  &:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  &:focus,
+  &:active {
+    outline: none; // Remove outline
+  }
+  &:disabled {
+    pointer-events: none; // Prevent mouse click
+  }
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template,
+[hidden] {
+  display: none;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.3333333333;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+h6 {
+  font-size: 1.2rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0.05rem;
+}
+
+p {
+  line-height: 1.4285714286;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4285714286;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+// END NORMALIZE //
+
+// BEGIN PLACEHOLDER //
+
+::-webkit-input-placeholder {
+  opacity: 1;
+  color: #999999;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  color: #999999;
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  opacity: 1;
+  color: #999999;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: #999999;
+  font-weight: 400;
+}
+
+// END PLACEHOLDER //
+
+// BEGIN GENERAL //
+
+// Prevent user selection
+a,
+input,
+select,
+textarea,
+[tabindex] {
+  &:focus,
+  &:active {
+    outline: none; // Remove outline
+  }
+  &:disabled {
+    pointer-events: none; // Prevent mouse click
+  }
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+// for input auto fill usename, password
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px #ffffff inset;
+  background-color: #ffffff !important;
+  border-color: #ffffff;
+  -webkit-text-fill-color: #ffffff !important;
+}
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  } // stylelint-disable-line at-rule-no-vendor-prefix
+}

@@ -1,0 +1,63 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    .flex#{$infix}-row {
+      flex-direction: row;
+    }
+
+    .flex#{$infix}-column {
+      flex-direction: column;
+    }
+
+    .flex#{$infix}-row-r {
+      flex-direction: row-reverse;
+    }
+
+    .flex#{$infix}-column-r {
+      flex-direction: column-reverse;
+    }
+
+    .items#{$infix}-center {
+      align-items: center;
+    }
+
+    .items#{$infix}-start {
+      align-items: flex-start;
+    }
+
+    .items#{$infix}-end {
+      align-items: flex-end;
+    }
+
+    .content#{$infix}-center {
+      justify-content: center;
+    }
+
+    .content#{$infix}-start {
+      justify-content: flex-start;
+    }
+
+    .content#{$infix}-space-between {
+      justify-content: space-between;
+    }
+
+    .content#{$infix}-end {
+      justify-content: flex-end;
+    }
+
+    .flex#{$infix}-nowrap {
+      flex-wrap: nowrap;
+    }
+
+    .flex#{$infix}-wrap {
+      flex-wrap: wrap;
+    }
+
+    .flex#{$infix}-grow-1 {
+      flex-grow: 1;
+    }
+  }
+}
+
+// Note: Flex order belong to grid system
